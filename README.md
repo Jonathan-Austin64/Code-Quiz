@@ -5,7 +5,7 @@ In this homework assignment I created a timed quiz with 3 sets of questions prot
 ![Code-Quiz](/Img/CodeQuiz.png)
 
 Take my CodeQuiz at
-(Link)
+https://jonathan-austin64.github.io/Code-quiz/
 
 ## Instructions
 * If you want to view the scores click on leader board.
