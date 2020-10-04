@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>JavaScript Code Quiz</title>
+</head>
+
+<body>
+  <!-- jombotron w/ leaderBoard and timer -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <header class="countainer container-fluid">
+        <div class="row">
+          <h3 class="mr-auto m-3" id="leaderBoardLink" role="button">View Leader Board!</h3>
+          <h3 class="ml-auto m-3" id="timer"></h3>
+        </div>
+      </header>
+      <h1 id="currentQuestion" class=text-center> Javascript Quiz!</h1>
+      <section class="container container-fluid">
+        <div class=" d-flex justify-content-center text-danger" id="gameovercontainer">
+          <div class="font-weight-bold" id="timesup">
+            TIMES!
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!--End of JumboTron-->
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div id="questions" class="col-md-6 mx-auto">
+        <!-- Sub Row -->
+        <div class="row" id="optionsDiv">
+          <!-- Questions -->
+          <ul class="col-md-12 mx-auto" id="optionsUl">
+          </ul>
+        </div>
+        <button type="button" id="start" class="btn btn-success btn-lg">Start</button>
+      </div>
+    </div>
+  </div>
+  <!-- Populated item storage -->
+  <section id="modal-container" class="modal modal-dialog modal-dialog-centered">
+    <div class="modal-content modal-sm">
+      <div class="modal-header text-white">
+        <span class="close text-white">&times;</span>
+        <h2 id="modal-name">
+        </h2>
+      </div>
+      <div class="modal-body text-center text-dark">
+        <h3>
+          Leader Board:
+        </h3>
+        <form id="leaderBoardForm" class="container-fluid">
+          <div class="row">
+            <!-- High Score list is populated and ranked here -->
+            <ul id="leaderBoardsList" class="col-md-12 mx-auto">
+
+            </ul>
+          </div>
+          <div class="row justify-content-center">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Name" id="enterName" class="form-control" />
+              </div>
+           </form>
+        <div class="m-3">
+          <button type="button" id="save" class="btn btn-primary">SAVE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

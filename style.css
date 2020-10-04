@@ -1,0 +1,57 @@
+body {
+    background-color: grey;
+}
+
+#timesup {
+    font-size: 80px;
+}
+
+#highScoresList {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+#highScoresList li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    width: 75px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#start-button {
+    text-align: center;
+}
+
+button {
+    background-color:darkgreen;
+    color: white;
+
+}
+
+#currentQuestion {
+    color:Black;
+}
+
+.modal {
+    display: none;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color:blue;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 5px;
+    width: 80%;
+}
